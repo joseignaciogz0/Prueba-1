@@ -2,9 +2,82 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>HolaBata</title>
+  <title>gasto tokens al pedo</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0d0d0d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1 {
+      color: #ff4fd8;
+      font-size: 2.5rem;
+      text-align: center;
+      text-shadow: 0 0 10px #ff4fd8, 0 0 30px #ff00cc;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+    }
+
+    .stage {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    .therian {
+      font-size: 7rem;
+      animation: dance 0.5s infinite alternate ease-in-out;
+      transform-origin: bottom center;
+      filter: drop-shadow(0 0 12px #ff4fd8);
+    }
+
+    .music-note {
+      font-size: 2rem;
+      color: #ff4fd8;
+      animation: float 0.8s infinite alternate ease-in-out;
+    }
+
+    .note1 { animation-delay: 0s; }
+    .note2 { animation-delay: 0.2s; }
+    .note3 { animation-delay: 0.4s; }
+
+    @keyframes dance {
+      0%   { transform: rotate(-15deg) translateY(0px) scaleX(1); }
+      25%  { transform: rotate(5deg) translateY(-20px) scaleX(0.95); }
+      50%  { transform: rotate(15deg) translateY(-10px) scaleX(1.05); }
+      75%  { transform: rotate(-5deg) translateY(-25px) scaleX(0.97); }
+      100% { transform: rotate(-15deg) translateY(0px) scaleX(1); }
+    }
+
+    @keyframes float {
+      from { transform: translateY(0) rotate(-10deg); opacity: 0.6; }
+      to   { transform: translateY(-30px) rotate(10deg); opacity: 1; }
+    }
+
+    .label {
+      margin-top: 20px;
+      color: #888;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+  </style>
 </head>
 <body>
-  <h1>HolaBata</h1>
+  <h1>gasto tokens al pedo</h1>
+  <div class="stage">
+    <span class="music-note note1">&#9835;</span>
+    <span class="music-note note2">&#9836;</span>
+    <div class="therian">🐺</div>
+    <span class="music-note note3">&#9835;</span>
+    <span class="music-note note1">&#9834;</span>
+  </div>
+  <p class="label">🎵 lambada mode activated 🎵</p>
 </body>
 </html>
